@@ -1,11 +1,15 @@
 @font-face {
-	font-family: 'iran';
-	src: local('Vazirmatn-Regular') url('./asset/fonts/Vazirmatn-Regular.ttf')
-		format('truetype');
+  font-family: "iran";
+  src: url("./asset/fonts/Vazirmatn-Regular.ttf") format("truetype");
+}
+* {
+  font-family: "iran";
+  /* font-weight: normal;
+    font-size: 20px; */
 }
 .App {
-	direction: rtl;
-	font-family: 'iran';
-	background-color: white;
-	/* #f2f2f; */
+  direction: rtl;
+  font-family: "iran";
+  background-color: white;
+  /* #f2f2f; */
 }
