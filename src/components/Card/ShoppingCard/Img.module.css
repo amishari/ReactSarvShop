@@ -1,0 +1,17 @@
+.img-sec {
+	position: relative;
+	width: 90%;
+	height: 55%;
+	margin-top: 1.2rem;
+	cursor: zoom-in;
+}
+
+.img-sec img {
+	width: 80%;
+	/* height:60%; */
+	/* transform-origin: 0 0;
+	transition: transform 0.25s, visibility 0.25s ease-in;
+	cursor: zoom-in; */
+	margin-bottom: 1rem;
+	cursor: zoom-in;
+}

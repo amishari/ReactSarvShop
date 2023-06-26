@@ -1,0 +1,66 @@
+.cart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #24becc;
+	border-radius: 25px;
+	border: none;
+	padding: 0.5rem 1rem;
+	font: inherit;
+	cursor: pointer;
+	color: #040014;
+	overflow: hidden;
+	position: relative;
+}
+
+.cart:before {
+	content: '';
+	position: absolute;
+	width: 9rem;
+	height: 5em;
+	background-color: #7d64fc;
+	top: 50%;
+	transform: skewX(30deg) translate(-150%, -50%);
+	transition: all 0.5s;
+}
+.badge {
+	background-color: #f2f0ff;
+	border-radius: 50px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 0.15rem 1rem;
+	color: #040014;
+}
+
+.logo {
+	font-size: 0.9rem;
+	margin-left: 0.35rem;
+}
+.icon {
+	scale: 1.1;
+	margin-left: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.cart:hover {
+	background-color: #4cc9f0;
+	color: #fff;
+	box-shadow: 0 2px 0 2px #0d3b66;
+}
+.cart:hover::before {
+	transform: skewX(30deg) translate(150%, -50%);
+	transition-delay: 0.2s;
+}
+.img {
+	width: 100%;
+	padding: 0;
+	height: 30rem;
+	z-index: 0;
+	overflow: hidden;
+	object-fit: cover;
+}
+.imgimg {
+	width: 110%;
+	height: 100%;
+	object-fit: cover;
+}
