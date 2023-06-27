@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
-import Card from "./components/Card/Card";
+// import Card from "./components/Card/Card";
 import Product from "./asset/jsonData/data.json";
 import "./styles.css";
 import "./asset/fonts/Vazirmatn-Regular.ttf";
@@ -24,8 +24,8 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Search search={searchTerm} onSearch={handleSearch} />
-      <List list={searchedItems} product={Product} />
+      <Search onSearch={handleSearch} />
+      <List list={searchedItems} />
     </div>
   );
 }

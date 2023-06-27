@@ -1,10 +1,9 @@
-import Card from "./Card/Card";
-// import classes from "../components/Card/Card.module.css";
-const List = ({ list, product }) => {
+import Card from "../components/Card/Card";
+const List = ({ list }) => {
   if ({ list }.length === 0) {
     return <h2> Nothing Found! Try again. </h2>;
   }
-  return <Card data={product} />;
+  return <Card data={list} />;
 };
 
 export default List;
