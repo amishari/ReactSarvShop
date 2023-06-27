@@ -1,56 +1,56 @@
 .headerCard {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 0.6rem;
-	font-family: 'iran';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.6rem;
+  font-family: "iran";
 }
 .headerCard button:last-of-type {
-	background-color: #24becc;
-	color: #040014;
-	padding: 1px 3px;
-	border-radius: 5px;
-	font-size: 0.8rem;
-	font-weight: bolder;
+  background-color: #24becc;
+  color: #040014;
+  padding: 1px 3px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bolder;
 
-	z-index: 1;
-	border-color: transparent;
-	right: 11rem;
-	top: 10px;
-	position: absolute;
+  z-index: 1;
+  border-color: transparent;
+  right: 12rem;
+  top: 10px;
+  position: absolute;
 }
 .headerCard button:first-of-type {
-	background-color: #24becc;
-	color: #040014;
-	padding: 3px 3px;
-	border-radius: 5px;
-	position: absolute;
-	right: 0.8rem;
-	top: 10px;
-	font-size: 0.8em;
-	z-index: 1;
-	overflow: hidden;
-	border-color: transparent;
-	cursor: pointer;
-	font-weight: bold;
+  background-color: #24becc;
+  color: #040014;
+  padding: 3px 3px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0.8rem;
+  top: 10px;
+  font-size: 0.8em;
+  z-index: 1;
+  overflow: hidden;
+  border-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .headerCard button:first-of-type:before {
-	content: '';
-	position: absolute;
-	width: 4rem;
-	height: 100%;
-	background-color: #7d64fc;
-	top: 50%;
-	transform: skewX(30deg) translate(-150%, -50%);
-	transition: all 0.5s;
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 100%;
+  background-color: #7d64fc;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
 }
 .headerCard button:first-of-type:hover {
-	background-color: #4cc9f0;
-	box-shadow: 0 2px 0 2px #0d3b66;
+  background-color: #4cc9f0;
+  box-shadow: 0 2px 0 2px #0d3b66;
 }
 .headerCard button:first-of-type:hover::before {
-	transform: skewX(30deg) translate(150%, -50%);
-	transition-delay: 0.1s;
-	opacity: 50%;
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+  opacity: 50%;
 }
