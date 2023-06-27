@@ -5,6 +5,7 @@ import Card from "./components/Card/Card";
 import Product from "./asset/jsonData/data.json";
 import "./styles.css";
 import "./asset/fonts/Vazirmatn-Regular.ttf";
+import List from "./components/List";
 
 export default function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,7 +16,7 @@ export default function App() {
 
   const searchedItems = Product.filter((item) => {
     return (
-      item.Product_name.includes(searchTerm) ||
+      [item.Product_name].toString().includes(searchTerm) ||
       [item.code].toString().includes(searchTerm)
     );
   });
@@ -24,7 +25,7 @@ export default function App() {
     <div className="App">
       <Header />
       <Search search={searchTerm} onSearch={handleSearch} />
-      <Card list={searchedItems} />
+      <List list={searchedItems} product={Product} />
     </div>
   );
 }
