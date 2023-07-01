@@ -1,9 +1,17 @@
-import Card from "../components/Card/Card";
-const List = ({ list }) => {
-  if ({ list }.length === 0) {
-    return <h2> Nothing Found! Try again. </h2>;
+import ShoppingCard from "./Card/ShoppingCard/ShoppingCard";
+import classes from "../components/Card/Card.module.css";
+const List = (props) => {
+  if (props.list.length === 0) {
+    return <h2> چیزی یافت نشد. </h2>;
   }
-  return <Card data={list} />;
+  return (
+    <div className={classes.cards}>
+      {props.list.map((item) => {
+        return <ShoppingCard card={item} />;
+      })}
+      ;
+    </div>
+  );
 };
 
 export default List;

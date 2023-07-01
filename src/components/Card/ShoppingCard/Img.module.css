@@ -1,17 +1,20 @@
 .img-sec {
-	position: relative;
-	width: 90%;
-	height: 55%;
-	margin-top: 1.2rem;
-	cursor: zoom-in;
+  position: relative;
+  width: 90%;
+  height: 65%;
+  margin-top: 1.2rem;
+  cursor: zoom-in;
 }
 
 .img-sec img {
-	width: 80%;
-	/* height:60%; */
-	/* transform-origin: 0 0;
-	transition: transform 0.25s, visibility 0.25s ease-in;
-	cursor: zoom-in; */
-	margin-bottom: 1rem;
-	cursor: zoom-in;
+  width: 80%;
+  /* height: 60%; */
+  transform-origin: 0 0;
+  transition: transform 0.25s, visibility 0.25s ease-in;
+  cursor: zoom-in;
+  margin-bottom: 1rem;
+}
+.img-sec img:hover {
+  transform: scale(2);
+  z-index: 1;
 }

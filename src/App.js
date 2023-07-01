@@ -24,7 +24,7 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Search onSearch={handleSearch} />
+      <Search search={searchTerm} onSearch={handleSearch} />
       <List list={searchedItems} />
     </div>
   );

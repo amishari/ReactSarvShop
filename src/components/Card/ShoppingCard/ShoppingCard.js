@@ -3,20 +3,14 @@ import Img from "./Img";
 import Buttons from "./Buttons";
 import classes from "./ShoppingCard.module.css";
 
-const ShoppingCard = ({ info }) => {
+const ShoppingCard = ({ card }) => {
   return (
-    <>
-      {info.map(({ code, img, Product_name, PriceString, QtyPack }, index) => {
-        return (
-          <div className={classes.shoppingCard} key={index}>
-            <HeaderCard code={code} />
-            <Img img={img} />
-            <div className={classes.title}>{Product_name}</div>
-            <Buttons price={PriceString} qty={QtyPack} />
-          </div>
-        );
-      })}
-    </>
+    <div className={classes.shoppingCard}>
+      <HeaderCard code={card.code} />
+      <Img img={card.img} />
+      <div className={classes.title}>{card.Product_name}</div>
+      <Buttons price={card.PriceString} qty={card.QtyPack} />
+    </div>
   );
 };
 export default ShoppingCard;
