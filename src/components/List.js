@@ -6,8 +6,8 @@ const List = (props) => {
   }
   return (
     <div className={classes.cards}>
-      {props.list.map((item,index) => {
-        return <ShoppingCard card={item} index={item.code}/>;
+      {props.list.map((item) => {
+        return <ShoppingCard card={item} key={item.code}/>;
       })}
       ;
     </div>
